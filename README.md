@@ -1,8 +1,8 @@
-# README
+# Códigos da Faculdade
 
 Este repositório contém exercícios de código e projetos desenvolvidos ao longo do curso em diversas disciplinas. Os projetos maiores possuem seus próprios repositórios, enquanto os exercícios de menor escala estão centralizados aqui para facilitar o acesso e o compartilhamento.
 
-## Matérias e Descrição dos Exercícios:
+## Matérias e Descrição dos Exercícios
 
 ### Arquitetura e Padrões de Software
 
