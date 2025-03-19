@@ -1,0 +1,14 @@
+Vídeo - https://youtu.be/cRxDQHALpuQ
+
+Timestamp:
+00:00 - Autograder
+00:28 - Q1
+02:13 - Q2
+04:33 - Q3
+07:16 - Q4
+09:40 - Q5
+11:56 - Q6 - Item a)
+12:34 - Q6 - Item b)
+13:12 - Q6 - Item c)
+14:02 - Q6 - Item d)
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 21</title>
+    <style>
+        .content {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 15px;
+            width: 80%;
+            background-color: #f2f2f2;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            justify-content: center;
+        }
+
+        h1 {
+            grid-column: span 4;
+            text-align: left;
+        }
+
+        label, input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        textarea {
+            grid-column: span 4;
+            height: 150px;
+            resize: none;
+        }
+
+        .buttons {
+            grid-column: span 4;
+            gap: 12px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .limpar {
+            background-color: red;
+        }
+
+        .limpar:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <section>
+            <h1>Exercício 21 - Cálculo de Juros Anual</h1>
+
+            <label for="valor-inicial-input">Valor Inicial:</label>
+            <input type="text" id="valor-inicial-input" placeholder="Digite o valor inicial">
+
+            <label for="juros-ano-input">Juros ao ano (%):</label>
+            <input type="text" id="juros-ano-input" placeholder="Digite a taxa de juros anual">
+
+            <label for="ano-inicial-input">Ano Inicial:</label>
+            <input type="text" id="ano-inicial-input" placeholder="Digite o ano inicial">
+
+            <label for="ano-final-input">Ano Final:</label>
+            <input type="text" id="ano-final-input" placeholder="Digite o ano final">
+
+            <div class="buttons">
+                <button id="calcular">Calcular Rendimentos</button>
+                <button id="limpar" class="limpar">Limpar Cálculos</button>
+            </div>
+
+            <textarea id="output" readonly placeholder="Resultado aparecerá aqui..."></textarea>
+
+        </section>
+    </div>
+
+    <script>
+        function isNumber(value) {
+            return !isNaN(value) && value.trim() !== "";
+        }
+
+        function limparCampos() {
+            document.querySelector('#valor-inicial-input').value = '';
+            document.querySelector('#juros-ano-input').value = '';
+            document.querySelector('#ano-inicial-input').value = '';
+            document.querySelector('#ano-final-input').value = '';
+            document.querySelector('#output').value = '';
+        }
+
+        document.querySelector('#calcular').addEventListener('click', function () {
+            const valorInicial = document.querySelector('#valor-inicial-input').value;
+            const jurosAno = document.querySelector('#juros-ano-input').value;
+            const anoInicial = document.querySelector('#ano-inicial-input').value;
+            const anoFinal = document.querySelector('#ano-final-input').value;
+            const output = document.querySelector('#output');
+
+            if (!isNumber(valorInicial) || !isNumber(jurosAno) || !isNumber(anoInicial) || !isNumber(anoFinal)) {
+                output.value = "Erro: Certifique-se de que todos os campos contenham números válidos.";
+                return;
+            }
+
+            const valorInicialNum = parseFloat(valorInicial);
+            const porcentagem = parseFloat(jurosAno) / 100;
+            const anoInicialNum = parseInt(anoInicial);
+            const anoFinalNum = parseInt(anoFinal);
+            let valorAtual = valorInicialNum;
+            
+            output.value = 'Nono Programa de Práticas Profissionais\n\n';
+            output.value = `Valor Inicial: R$ ${valorInicialNum.toFixed(2)}\t`;
+            output.value += `Juros ao ano: ${(porcentagem * 100).toFixed(2)}%\t`;
+            output.value += `Ano Inicial: ${anoInicialNum}\t`;
+            output.value += `Ano Final: ${anoFinalNum}\n\n`;
+            output.value = 'A rentabilidade de sua aplicação ao final de cada ano será:\n\n';
+            output.value += "Ano | Valor | Juros\n";
+
+            for (let ano = anoInicialNum; ano <= anoFinalNum; ano++) {
+                const valor = valorAtual * (1 + porcentagem);
+                const juros = (valor / valorInicialNum) - 1;
+                output.value += `${ano} | R$ ${valor.toFixed(2)} | ${(juros * 100).toFixed(2)}%\n`;
+                valorAtual = valor;
+            }
+
+            output.value += "\nMuito obrigado por utilizar nossos serviços!";
+        });
+
+        document.querySelector('#limpar').addEventListener('click', limparCampos);
+    </script>
+</body>
+</html>

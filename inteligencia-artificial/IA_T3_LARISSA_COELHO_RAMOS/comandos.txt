@@ -1,0 +1,20 @@
+Questão 1: Q-learning tabular - replicação de experimentos
+
+python tql_train.py --num_episodes 6000 --env_name Blackjack-v1
+python tql_test.py --num_episodes  100 --env_name Blackjack-v1
+
+python tql_train.py --num_episodes 6000 --env_name CliffWalking-v0
+python tql_test.py --num_episodes 100 --env_name CliffWalking-v0
+
+python tql_train.py --num_episodes 6000 --env_name FrozenLake-v1
+python tql_test.py --num_episodes 100 --env_name FrozenLake-v1
+
+Questão 2: Q-learning tabular – discretização de estados
+
+python tql_train_mountain.py --num_episodes 1000 --env_name MountainCar-v0
+python tql_test_mountain.py --num_episodes 200 --env_name MountainCar-v0
+
+Questão 3: Q-learning com aproximação linear
+
+python lql_train.py --num_episodes 10000 --max_steps 100 --env_name BlackJack-v1
+python lql_test.py --num_episodes 200 --env_name BlackJack-v1 

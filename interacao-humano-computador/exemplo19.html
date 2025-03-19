@@ -1,0 +1,259 @@
+
+/* formatação CSS do corpo da página HTML */
+body{
+   /* define a família de fontes da página */
+   font-family: verdana, tahoma, arial, sans-serif;
+   /* tamanho da fonte */
+   font-size: 10pt;
+   /* define que todas as 4 margens valem 0px */
+   margin: 0px;
+   /* define a cor de fundo da página */
+   background-color: rgb(50,160,150);
+   /* define que o espaço entre os elementos e bordas vale 0px */
+   padding: 0px;
+}
+/* formatação CSS dos parágrafos da página HTML */
+p{
+   /* define que o espaço entre os elementos e a borda superior vale 10px */
+   padding-top: 10px;
+   /* define que todas as 4 margens valem 0px */
+   margin: 0px;
+}
+/* classe de formatação CSS da tabela de navegação do menu principal */
+table.navbar{
+   /* tamanho da fonte */
+   font-size: 8pt;
+   /* define que todas as 4 margens valem 0px */
+   margin: 0px;
+   /* define que o espaço entre os elementos e bordas vale 0px */
+   padding: 0px;
+   /* define que o espaço entre os elementos e a borda esquerda vale 5px */
+   padding-left: 5px; 
+   /* espessura da borda */
+   border: 0px; 
+   /* fonte com estilo em negrito */
+   font-weight: bold;
+   /* define a cor de fundo da tabela de navegação */
+   background-color:whitesmoke;
+}
+/* classe de formatação CSS da tabela de navegação dos menus */
+table.menu{
+   /* tamanho da fonte */
+   font-size: 8pt;
+   /* define que todas as 4 margens valem 0px */
+   margin: 0px;
+   /* define que a margem esquerda vale 10px */
+   margin-left: 10px; 
+   /* define que o espaço entre os elementos e bordas vale 0px */
+   padding: 0px;
+   /* fonte com estilo em negrito */
+   font-weight: bold;
+}
+/* classe de formatação CSS da célula da tabela com as opções dos menus sem estarem sendo apontadas pelo mouse */
+td.menuNormal{
+   /* define que o espaço entre os elementos e bordas vale 0px */
+   padding: 0px;
+   /* fonte com cor da letra preta */
+   color: black;
+   /* fonte com estilo em negrito */
+   font-weight: bold;
+   /* define o alinhamento vertical como meio */
+   vertical-align: middle;
+   /* define a cor de fundo da célula com a opção do menu sem estar sendo apontada pelo mouse */
+   background-color: whitesmoke;
+}
+/* classe de formatação CSS da célula da tabela com as opções dos menus que estão sendo apontadas pelo mouse */
+td.menuHover{
+   /* define que o espaço entre os elementos e bordas vale 0px */
+   padding: 0px;
+   /* fonte com cor da letra preta */
+   color: black;
+   /* fonte com estilo em negrito */
+   font-weight: bold;
+   /* define o alinhamento vertical como meio */
+   vertical-align: middle;
+   /* define a cor de fundo da célula com a opção do menu estando apontada pelo mouse */
+   background-color: lightblue;
+}
+/* classe de formatação CSS da div com as opções dos menus sem estarem sendo apontadas pelo mouse */
+div.menuNormal{
+   /* define que a exibição da div será ocultada e não ocupará espaço na interface */
+   display: none;
+   /* define que o posicionamento da div será na ordem de apresentação das tas da página HTML */
+   position: static;
+}
+/* classe de formatação CSS da div com as opções dos menus que estão sendo apontadas pelo mouse */
+div.menuHover{
+   /* espessura da borda, tipo de borda e cor da borda */
+   border: 1px solid lightblue;
+   /* define a cor de fundo da div */
+   background-color: whitesmoke;
+   /* define que a exibição da div será apresentada logo após a outra div na interface, sem espaços para separá-las */
+   display: inline;
+   /* define que o posicionamento da div será em relação ao position: static da outra div na interface */
+   position: absolute;
+}
+/* pseudo-classe (:link) de formatação CSS do hipertexto com a opção do menu sem estar sendo apontada pelo mouse */
+a.menuitem:link{
+   /* fonte com o sublinhamento desligado */
+   text-decoration: none;
+   /* fonte com cor da letra preta */
+   color: black;
+   /* define a cor de fundo do hipertexto normal */
+   background-color: whitesmoke;
+   /* define que a exibição do hipextexto será apresentado na interface com quebra de linha */
+   display: block;
+}
+/* pseudo-classe (:visited) de formatação CSS do hipertexto com a opção do menu que já foi clicada anteriormente */
+a.menuitem:visited{
+   /* fonte com o sublinhamento desligado */
+   text-decoration: none;
+   /* fonte com cor da letra preta */
+   color: black;
+   /* define a cor de fundo do hipertexto já acessado anteriormente */
+   background-color: whitesmoke;
+   /* define que a exibição do hipextexto será apresentado na interface com quebra de linha */
+   display: block;
+}
+/* pseudo-classe (:hover) de formatação CSS do hipertexto com a opção do menu que está sendo apontada pelo mouse */
+a.menuitem:hover{
+   /* fonte com o sublinhamento desligado */
+   text-decoration: none;
+   /* fonte com cor da letra preta */
+   color: black;
+   /* define a cor de fundo do hipertexto atualmente apontado */
+   background-color: lightblue;
+   /* define que a exibição do hipextexto será apresentado na interface com quebra de linha */
+   display: block;
+}
+/* pseudo-classe (:active) de formatação CSS do hipertexto com a opção do menu que foi clicada pelo mouse */
+a.menuitem:active{
+   /* fonte com o sublinhamento desligado */
+   text-decoration: none;
+   /* fonte com cor da letra preta */
+   color: black;
+   /* define a cor de fundo do hipertexto que foi clicado */
+   background-color: lightblue;
+   /* define que a exibição do hipextexto será apresentado na interface com quebra de linha */
+   display: block;
+}
+
+<html>
+<head>
+    <title>GUI com Barra de Menus</title>
+    <meta name="author" content="Prof. Fábio">
+    <meta name="copyright" content="PI/IHC">
+    <meta name="keywords" content="HTML">
+    <!-- link com o arquivo externo de formatação CSS -->
+    <link rel="StyleSheet" href="menu.css">
+    <!-- link com o arquivo externo de scripts -->
+    <script language="javascript" src="menu.js"></script>
+ </head>
+
+ <body>
+    <!-- inicio do menu principal -->
+    <!-- adicione mais 115 em width para cada nova opção do menu principal -->
+    <table class="navbar" width="115">
+       <tbody><tr>
+          <!-- inicio do menu arquivo  - duplique a partir daqui para criar o menu editar -->
+          <td class="menuNormal" width="120" onmouseover="abrir(this);" onmouseout="fechar(this);">
+             <p>Arquivo</p>
+             <!-- div para montar o menu arquivo -->
+             <div class="menuNormal" width="115">
+                <table class="menu" width="115">
+                   <!-- opção novo do menu arquivo -->
+                   <tbody><tr>
+                      <td class="menuNormal">
+                         <a href="javascript:alert('Você executou o comando Novo!');" class="menuitem"><img src="MenuNovo.gif"> Novo</a>
+                      </td>
+                   </tr>
+                   <!-- opção abrir do menu arquivo -->
+                   <tr>
+                      <td class="menuNormal">
+                         <a href="javascript:alert('Você executou o comando Abrir!');" class="menuitem"><img src="MenuAbrir.gif"> Abrir</a>
+                      </td>
+                   </tr>
+                   <!-- início do submenu salvar do menu arquivo -->
+                   <tr>
+                      <td class="menuNormal" width="114" onmouseover="abrir(this);" onmouseout="fechar(this);">Salvar ...
+                         <!-- div para montar o submenu salvar -->
+                         <div class="menuNormal" width="110">
+                            <table class="menu" width="110">
+                               <!-- sub-opção salvar do submenu salvar do menu arquivo -->
+                               <tbody><tr>
+                                  <td class="menuNormal">
+                                     <a href="javascript:alert('Você executou o comando Salvar!');" class="menuitem"><img src="MenuSalvar.gif"> Salvar</a>
+                                  </td>
+                               </tr>
+                               <!-- sub-opção salvar como do submenu salvar do menu arquivo -->
+                               <tr>
+                                  <td class="menuNormal">
+                                     <a href="javascript:alert('Você executou o comando Salvar Como!');" class="menuitem">Salvar como</a>
+                                  </td>
+                               </tr>
+                               <!-- sub-opção salvar tudo do submenu salvar do menu arquivo -->
+                               <tr>
+                                  <td class="menuNormal">
+                                     <a href="javascript:alert('Você executou o comando Salvar tudo!');" class="menuitem">Salvar tudo</a>
+                                  </td>
+                               </tr>
+                            </tbody></table>
+                         </div>
+                         <!-- final da div para montar o submenu salvar -->
+                      </td>
+                   </tr>
+                   <!-- final do submenu salvar -->
+                   <!-- linha de separação do menu arquivo -->
+                   <tr>
+                      <td class="menuNormal">
+                         <hr>
+                      </td>
+                   </tr>
+                   <!-- opção sair do menu arquivo -->
+                   <tr>
+                      <td class="menuNormal">
+                         <a href="javascript:alert('Você executou o comando Sair!');" class="menuitem">Sair</a>
+                      </td>
+                   </tr>
+                </tbody></table>
+             </div>
+             <!-- final da div para montar o menu arquivo -->
+          </td>
+       <!-- final do menu arquivo - final da duplicação para criar o menu editar -->
+
+       <!-- insira a <td> de início do menu editar aqui -->
+
+       </tr>
+    </tbody></table>
+    <!-- final do menu principal -->
+ 
+</body>
+
+</html>
+
+/* função de muda a formatação da opção do menu/submenu que está sendo apontado pelo mouse */
+/* recebe o parâmetro opcao com a identificação da opção que está sendo apontada */ 
+function abrir(opcao)
+{
+   // cria a variável celula com a célula da tabela que contém a opção que está sendo apontada
+   var celula = opcao;
+   // cria a variável divisao com a primeira opção (item(0) - primeira div) do menu/submenu montado pela respectiva tag div
+   var divisao = celula.getElementsByTagName("div").item(0);
+   // altera a classe CSS da opção apontada para formatar como menu em visitação 
+   celula.className = "menuHover";
+   // altera a classe CSS da div da opção apontada para formatar como menu em visitação 
+   divisao.className = "menuHover";
+}
+/* função de muda a formatação da opção do menu/submenu que está deixando de ser apontado pelo mouse */
+/* recebe o parâmetro opcao com a identificação da opção que está deixando de ser apontada */ 
+function fechar(opcao)
+{
+   // cria a variável celula com a célula da tabela que contém a opção que está deixando de ser apontada
+   var celula = opcao;
+   // cria a variável divisao com a primeira opção (item(0) - primeira div) do menu/submenu montado pela respectiva tag div
+   var divisao = celula.getElementsByTagName("div").item(0);
+   // altera a classe CSS da opção que está deixando de ser apontada para formatar como menu normal
+   celula.className = "menuNormal";
+   // altera a classe CSS da div da opção que está deixando de ser apontada para formatar como menu normal
+   divisao.className = "menuNormal";
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUI com Barra de Menus</title>
+    <!-- Link para o FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12pt;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(50,160,150);
+        }
+
+        .navbar {
+            background-color: #f0f4f7;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .navbar p {
+            margin: 0;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .navbar-item {
+            position: relative;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid lightgray;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            z-index: 10;
+        }
+
+        .menu a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 10pt;
+        }
+
+        .menu a:hover {
+            background-color: #f8f9fa;
+        }
+
+        .menu a i {
+            margin-right: 10px;
+        }
+
+        .menu .shortcut {
+            color: gray;
+            font-size: 9pt;
+        }
+
+        .navbar-item:hover .menu {
+            display: block;
+        }
+    </style>
+
+    <script>
+        // Funções para os atalhos
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'n') {
+                event.preventDefault();
+                alert('Você executou o comando Novo (Ctrl+N)!');
+            }
+            if (event.ctrlKey && event.key === 'o') {
+                event.preventDefault();
+                alert('Você executou o comando Abrir (Ctrl+O)!');
+            }
+            if (event.ctrlKey && event.key === 's') {
+                event.preventDefault();
+                alert('Você executou o comando Salvar (Ctrl+S)!');
+            }
+            if (event.altKey && event.key === 'F4') {
+                event.preventDefault();
+                alert('Você executou o comando Sair (Alt+F4)!');
+            }
+            if (event.ctrlKey && event.key === 'z') {
+                event.preventDefault();
+                alert('Você executou o comando Desfazer (Ctrl+Z)!');
+            }
+            if (event.ctrlKey && event.key === 'y') {
+                event.preventDefault();
+                alert('Você executou o comando Refazer (Ctrl+Y)!');
+            }
+            if (event.ctrlKey && event.key === 'x') {
+                event.preventDefault();
+                alert('Você executou o comando Recortar (Ctrl+X)!');
+            }
+            if (event.ctrlKey && event.key === 'c') {
+                event.preventDefault();
+                alert('Você executou o comando Copiar (Ctrl+C)!');
+            }
+            if (event.ctrlKey && event.key === 'v') {
+                event.preventDefault();
+                alert('Você executou o comando Colar (Ctrl+V)!');
+            }
+            if (event.ctrlKey && event.key === 'f') {
+                event.preventDefault();
+                alert('Você executou o comando Localizar (Ctrl+F)!');
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <!-- Menu Arquivo -->
+        <div class="navbar-item">
+            <p>Arquivo</p>
+            <div class="menu">
+                <a href="javascript:void(0);" onclick="alert('Novo arquivo criado!')">
+                    <i class="fas fa-file"></i> Novo <span class="shortcut">Ctrl+N</span>
+                </a>
+                <a href="javascript:void(0);" onclick="alert('Abrir arquivo!')">
+                    <i class="fas fa-folder-open"></i> Abrir <span class="shortcut">Ctrl+O</span>
+                </a>
+                <a href="javascript:void(0);" onclick="alert('Arquivo salvo!')">
+                    <i class="fas fa-save"></i> Salvar <span class="shortcut">Ctrl+S</span>
+                </a>
+                <a href="javascript:void(0);" onclick="alert('Aplicação fechada!')">
+                    <i class="fas fa-sign-out-alt"></i> Sair <span class="shortcut">Alt+F4</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Menu Editar -->
+        <div class="navbar-item">
+            <p>Editar</p>
+            <div class="menu">
+                <a href="javascript:void(0);" onclick="alert('Desfeito!')">
+                    <i class="fas fa-undo"></i> Desfazer <span class="shortcut">Ctrl+Z</span>
+                </a>
+                <a href="javascript:void(0);" onclick="alert('Refeito!')">
+                    <i class="fas fa-redo"></i> Refazer <span class="shortcut">Ctrl+Y</span>
+                </a>
+                <a href="javascript:void(0);" onclick="alert('Texto recortado!')">
+                    <i class="fas fa-cut"></i> Recortar <span class="shortcut">Ctrl+X</span>
+                </a>
+                <a href="javascript:void(0);" onclick="alert('Texto copiado!')">
+                    <i class="fas fa-copy"></i> Copiar <span class="shortcut">Ctrl+C</span>
+                </a>
+                <a href="javascript:void(0);" onclick="alert('Texto colado!')">
+                    <i class="fas fa-paste"></i> Colar <span class="shortcut">Ctrl+V</span>
+                </a>
+                <a href="javascript:void(0);" onclick="alert('Localizando texto!')">
+                    <i class="fas fa-search"></i> Localizar <span class="shortcut">Ctrl+F</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

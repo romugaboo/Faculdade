@@ -1,0 +1,137 @@
+---------------------------------
+Iniciando leitura do dataset.
+---------------------------------
+
+---------------------------------
+Dataset lido com sucesso.
+---------------------------------
+
+---------------------------------
+As 100 palavras do dataset mais utilizadas:
+---------------------------------
+
+1 - Palavra: nan | Ocorrências: 2327
+2 - Palavra: e | Ocorrências: 901
+3 - Palavra: o | Ocorrências: 846
+4 - Palavra: de | Ocorrências: 841
+5 - Palavra: pesquisando | Ocorrências: 772
+6 - Palavra: a | Ocorrências: 770
+7 - Palavra: kills | Ocorrências: 754
+8 - Palavra: no | Ocorrências: 697
+9 - Palavra: que | Ocorrências: 684
+10 - Palavra: eu | Ocorrências: 570
+11 - Palavra: seu | Ocorrências: 567
+12 - Palavra: lvl | Ocorrências: 412
+13 - Palavra: level | Ocorrências: 408
+14 - Palavra: suas | Ocorrências: 334
+15 - Palavra: se | Ocorrências: 297
+16 - Palavra: do | Ocorrências: 292
+17 - Palavra: um | Ocorrências: 264
+18 - Palavra: em | Ocorrências: 258
+19 - Palavra: pra | Ocorrências: 253
+20 - Palavra: rank | Ocorrências: 248
+21 - Palavra: para | Ocorrências: 240
+22 - Palavra: da | Ocorrências: 234
+23 - Palavra: com | Ocorrências: 231
+24 - Palavra: the | Ocorrências: 225
+25 - Palavra: vc | Ocorrências: 214
+26 - Palavra: uma | Ocorrências: 212
+27 - Palavra: mas | Ocorrências: 207
+28 - Palavra: tem | Ocorrências: 196
+29 - Palavra: na | Ocorrências: 181
+30 - Palavra: q | Ocorrências: 170
+31 - Palavra: me | Ocorrências: 163
+32 - Palavra: plataforma | Ocorrências: 161
+33 - Palavra: isso | Ocorrências: 161
+34 - Palavra: n | Ocorrências: 159
+35 - Palavra: nickname | Ocorrências: 159
+36 - Palavra: s | Ocorrências: 157
+37 - Palavra: agora | Ocorrências: 151
+38 - Palavra: to | Ocorrências: 150
+39 - Palavra: nao | Ocorrências: 150
+40 - Palavra: mais | Ocorrências: 148
+41 - Palavra: por | Ocorrências: 146
+42 - Palavra: os | Ocorrências: 145
+43 - Palavra: vai | Ocorrências: 144
+44 - Palavra: comando | Ocorrências: 136
+45 - Palavra: como | Ocorrências: 134
+46 - Palavra: you | Ocorrências: 133
+47 - Palavra: meu | Ocorrências: 133
+48 - Palavra: server | Ocorrências: 132
+49 - Palavra: sim | Ocorrências: 130
+50 - Palavra: voc | Ocorrências: 127
+51 - Palavra: ele | Ocorrências: 125
+52 - Palavra: ta | Ocorrências: 125
+53 - Palavra: pode | Ocorrências: 125
+54 - Palavra: sou | Ocorrências: 123
+55 - Palavra: foi | Ocorrências: 122
+56 - Palavra: as | Ocorrências: 121
+57 - Palavra: joined | Ocorrências: 116
+58 - Palavra: so | Ocorrências: 109
+59 - Palavra: vou | Ocorrências: 108
+60 - Palavra: t | Ocorrências: 99
+61 - Palavra: ai | Ocorrências: 97
+62 - Palavra: pc | Ocorrências: 97
+63 - Palavra: pq | Ocorrências: 97
+64 - Palavra: sem | Ocorrências: 97
+65 - Palavra: ser | Ocorrências: 97
+66 - Palavra: bom | Ocorrências: 97
+67 - Palavra: user | Ocorrências: 95
+68 - Palavra: deleted | Ocorrências: 95
+69 - Palavra: aqui | Ocorrências: 90
+70 - Palavra: catch | Ocorrências: 90
+71 - Palavra: mesmo | Ocorrências: 90
+72 - Palavra: pelo | Ocorrências: 86
+73 - Palavra: usar | Ocorrências: 82
+74 - Palavra: shiro | Ocorrências: 81
+75 - Palavra: registrado | Ocorrências: 79
+76 - Palavra: muito | Ocorrências: 78
+77 - Palavra: essa | Ocorrências: 78
+78 - Palavra: esse | Ocorrências: 78
+79 - Palavra: sei | Ocorrências: 77
+80 - Palavra: caught | Ocorrências: 76
+81 - Palavra: congratulations | Ocorrências: 76
+82 - Palavra: register | Ocorrências: 76
+83 - Palavra: bem | Ocorrências: 76
+84 - Palavra: minha | Ocorrências: 74
+85 - Palavra: boa | Ocorrências: 74
+86 - Palavra: ja | Ocorrências: 72
+87 - Palavra: tu | Ocorrências: 72
+88 - Palavra: algum | Ocorrências: 71
+89 - Palavra: uso | Ocorrências: 70
+90 - Palavra: youtube | Ocorrências: 70
+91 - Palavra: ela | Ocorrências: 69
+92 - Palavra: dia | Ocorrências: 67
+93 - Palavra: dados | Ocorrências: 67
+94 - Palavra: d | Ocorrências: 66
+95 - Palavra: futuro | Ocorrências: 65
+96 - Palavra: j | Ocorrências: 64
+97 - Palavra: p | Ocorrências: 64
+98 - Palavra: banco | Ocorrências: 64
+99 - Palavra: registrando | Ocorrências: 64
+100 - Palavra: is | Ocorrências: 64
+
+---------------------------------
+As 20 palavras do léxico mais utilizadas:
+---------------------------------
+
+1 - Palavra: vc | Ocorrências: 214
+2 - Palavra: to | Ocorrências: 150
+3 - Palavra: ta | Ocorrências: 125
+4 - Palavra: pq | Ocorrências: 97
+5 - Palavra: ah | Ocorrências: 36
+6 - Palavra: tbm | Ocorrências: 34
+7 - Palavra: xd | Ocorrências: 30
+8 - Palavra: lol | Ocorrências: 27
+9 - Palavra: oq | Ocorrências: 27
+10 - Palavra: vcs | Ocorrências: 23
+11 - Palavra: sorry | Ocorrências: 20
+12 - Palavra: agr | Ocorrências: 18
+13 - Palavra: msm | Ocorrências: 17
+14 - Palavra: mt | Ocorrências: 16
+15 - Palavra: and | Ocorrências: 16
+16 - Palavra: buceta | Ocorrências: 16
+17 - Palavra: aq | Ocorrências: 13
+18 - Palavra: galera | Ocorrências: 12
+19 - Palavra: td | Ocorrências: 12
+20 - Palavra: blz | Ocorrências: 12

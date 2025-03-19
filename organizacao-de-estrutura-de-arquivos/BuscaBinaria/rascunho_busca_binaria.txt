@@ -1,0 +1,18 @@
+- Abrir o arquivo ordenado (f)
+- fseek(f,0,SEEK_END);
+- tamarq = ftell(f);
+- qtdreg = tamarq / sizeof(Endereco);
+- inicio = 0
+- fim = qtdreg-1
+- achei = 0
+- procurado = "22755170"
+while(inicio <= fim && !achei) 
+{
+  meio = (inicio+fim)/2;
+  fseek(f,meio*sizeof(Endereco),SEEK_SET);
+  fread(...);
+  se igual achou
+  se menor primeira metade
+  se maior segunda metade
+}
+

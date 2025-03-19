@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sexto Programa de GUI</title>
+    <style>
+        .content{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            width: 25%;
+            background-color: #f2f2f2;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            justify-content: center;
+        }
+        h3,h1{
+          width: 100%;
+          text-align: left;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .left-side, .right-side{
+            width: 50%;
+        }
+
+        .left-side h4, .right-side h4{
+            font-size: 18px;
+        }
+        
+       
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <section>
+            <h1>Sexto Programa de GUI</h1>
+            <div class="left-side">
+                <h4>
+                    Valor Inicial:
+                </h4>
+                <h4 id="valor-inicial">
+                    <!-- Valor inicial será inserido aqui -->
+                </h4>
+            </div>
+            <div class="right-side">
+                <h4>
+                    Juros ao ano:
+                </h4>
+                <h4 id="juros-ano">
+                    <!-- Juros ao ano serão inseridos aqui -->
+                </h4>
+            </div>
+            <h3>A rentabilidade no final de cada ano será:</h3>
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Ano</th>
+                        <th>Valor</th>
+                        <th>Juros</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados são inseridos aqui pelo javascript -->
+                </tbody>
+            </table>
+            <h3>Muito obrigado por utilizar nossos serviços!</h3>
+            <button>OK</button>
+        </section>
+    </div>
+    
+
+    <script>
+        // Variáveis de entrada
+        const valorInicial = 1000; // Valor inicial (exemplo)
+        const porcentagem = 0.12;  // Porcentagem de aumento (5% por exemplo)
+        const anoFinal = 2015;          // Número de anos
+
+        let valorAtual = valorInicial;
+
+        const valorInicialElem = document.querySelector('#valor-inicial');
+        const jurosAnoElem = document.querySelector('#juros-ano');
+
+        // Atualiza os elementos com os valores
+        valorInicialElem.textContent = valorInicial.toFixed(2);
+        jurosAnoElem.textContent = (porcentagem * 100).toFixed(2) + '%';
+
+        // Seleciona o corpo da tabela onde os dados serão inseridos
+        const tbody = document.querySelector('#tabela tbody');
+
+        // Loop para calcular e preencher a tabela
+        for (let ano = 2011; ano <= anoFinal; ano++) {
+            // Calcula o valor atual e os juros
+            const valor = valorAtual * (1 + porcentagem);
+            const juros = (valor / valorInicial) - 1;
+
+            // Adiciona uma nova linha à tabela
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${ano}</td>
+                <td>${valor.toFixed(2)}</td>
+                <td>${(juros * 100).toFixed(2)}%</td>
+            `;
+            tbody.appendChild(tr);
+
+            // Atualiza o valor atual para o próximo ano
+            valorAtual = valor;
+        }
+    </script>
+</body>
+</html>

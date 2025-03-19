@@ -1,0 +1,137 @@
+---------------------------------
+Iniciando leitura do dataset.
+---------------------------------
+
+---------------------------------
+Dataset lido com sucesso.
+---------------------------------
+
+---------------------------------
+As 100 palavras do dataset mais utilizadas:
+---------------------------------
+
+1 nan 2327
+2 e 901
+3 o 846
+4 de 841
+5 pesquisando 772
+6 a 770
+7 kills 754
+8 no 697
+9 que 684
+10 eu 570
+11 seu 567
+12 lvl 412
+13 level 408
+14 suas 334
+15 se 297
+16 do 292
+17 um 264
+18 em 258
+19 pra 253
+20 rank 248
+21 para 240
+22 da 234
+23 com 231
+24 the 225
+25 vc 214
+26 uma 212
+27 mas 207
+28 tem 196
+29 na 181
+30 q 170
+31 me 163
+32 plataforma 161
+33 isso 161
+34 n 159
+35 nickname 159
+36 s 157
+37 agora 151
+38 to 150
+39 nao 150
+40 mais 148
+41 por 146
+42 os 145
+43 vai 144
+44 comando 136
+45 como 134
+46 you 133
+47 meu 133
+48 server 132
+49 sim 130
+50 voc 127
+51 ele 125
+52 ta 125
+53 pode 125
+54 sou 123
+55 foi 122
+56 as 121
+57 joined 116
+58 so 109
+59 vou 108
+60 t 99
+61 ai 97
+62 pc 97
+63 pq 97
+64 sem 97
+65 ser 97
+66 bom 97
+67 user 95
+68 deleted 95
+69 aqui 90
+70 catch 90
+71 mesmo 90
+72 pelo 86
+73 usar 82
+74 shiro 81
+75 registrado 79
+76 muito 78
+77 essa 78
+78 esse 78
+79 sei 77
+80 caught 76
+81 congratulations 76
+82 register 76
+83 bem 76
+84 minha 74
+85 boa 74
+86 ja 72
+87 tu 72
+88 algum 71
+89 uso 70
+90 youtube 70
+91 ela 69
+92 dia 67
+93 dados 67
+94 d 66
+95 futuro 65
+96 j 64
+97 p 64
+98 banco 64
+99 registrando 64
+100 is 64
+
+---------------------------------
+As 20 palavras do léxico mais utilizadas:
+---------------------------------
+
+1 vc 214
+2 to 150
+3 ta 125
+4 pq 97
+5 ah 36
+6 tbm 34
+7 xd 30
+8 lol 27
+9 oq 27
+10 vcs 23
+11 sorry 20
+12 agr 18
+13 msm 17
+14 mt 16
+15 and 16
+16 buceta 16
+17 aq 13
+18 galera 12
+19 td 12
+20 blz 12

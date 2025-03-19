@@ -1,0 +1,19 @@
+r      	Abre arquivo de texto para leitura. O fluxo é posicionado no começo do arquivo.
+
+
+w      	Trunca  o  arquivo  para comprimento zero, ou cria arquivo de texto para escrita. O fluxo é posicionado no começo do arquivo.
+
+
+a     	Abre  para escrita. O arquivo é criado se não existir. O fluxo é posicionado no fim do arquivo.
+      
+
+r+    	Abre para leitura e escrita. O fluxo é posicionado no começo do arquivo.
+
+
+w+    	Abre para leitura e escrita. O arquivo é criado se não existir, caso contrário ele é truncado. O fluxo é posicionado no começo do arquivo.
+
+
+"r+b" 	Abre um arquivo binário para leitura e escrita. O mesmo que "r+" acima, só que o arquivo é binário.
+
+
+"rb" 	Abre um arquivo binário para leitura. Igual ao modo "r" anterior, só que o arquivo é binário.
